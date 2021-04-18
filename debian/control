@@ -1,0 +1,15 @@
+Source: rr-early-device-setup
+Section: embedded
+Priority: optional
+Maintainer: Marko Hoyer <joe@unknown>
+Build-Depends: debhelper-compat (= 12), autotools-dev, libsystemd-dev
+Standards-Version: 4.4.0
+Homepage: <insert the upstream URL, if relevant>
+#Vcs-Browser: https://salsa.debian.org/debian/rr-early-device-setup
+#Vcs-Git: https://salsa.debian.org/debian/rr-early-device-setup.git
+
+Package: rr-early-device-setup
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libsystemd0
+Description: retroradio early device setup
+ This tool is started early during startup in the retroradio software and does a basic setup of devices and mounts.

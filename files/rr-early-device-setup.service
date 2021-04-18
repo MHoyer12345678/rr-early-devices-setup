@@ -1,0 +1,11 @@
+[Unit]
+Description="Retroradio early device setup"
+DefaultDependencies=no
+Before=pretty-early.target
+
+[Service]
+ExecStart=/usr/bin/rr-early-device-setup
+Type=notify
+
+[Install]
+WantedBy=multi-user.target
